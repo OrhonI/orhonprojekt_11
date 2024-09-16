@@ -5,7 +5,7 @@ import 'user.dart';
 void createProfile() {
   stdout.write("Gib deinen Benutzernamen ein, um dein Profil zu erstellen: ");
   String? username = stdin.readLineSync();
-
+//Benutzername und Passwort Abfrage
   if (username == null || !userDatabase.containsKey(username)) {
     print("Benutzername existiert nicht. Bitte registriere dich zuerst.");
     return;
